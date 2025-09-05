@@ -33,6 +33,22 @@ fruits.splice(2, 2);
 console.log(fruits);
 fruits.splice(2, 2, " sandia", "kiwi", "arandano");
 console.log(fruits);
+console.log("==========");
+let nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(nums);
+console.log("map");
+let numsMAP = nums.map((x) => x + 3);
+console.log(numsMAP);
+console.log(nums.map((x) => x * 10));
+console.log(nums.map((x) => `numero ${x}`));
+console.log("filter");
+let filterednums = nums.filter((x) => x > 5);
+console.log(filterednums);
+console.log(nums.filter((x) => x < 6));
+console.log(nums.filter(x => x % 2 === 0));
+console.log("reduce");
+console.log(nums.reduce((a, b) => a + b, 0));
+console.log(nums.reduce((a, b) => a * b, 1));
 
 
 
